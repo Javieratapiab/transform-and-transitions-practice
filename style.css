@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+/*  CSS Transition Fundamentals: Demo: Blue to Green */
+.square {
+  width: 250px;
+  height: 250px;
+  margin: 1rem 0 2rem 1rem;
+  background-color: blue;
+}
+
+section {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.description {
+  max-width: 200px;
+}
+
+/* Blue to green */
+#color .square {
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -ms-transition-property: background-color;
+  /* We add transitions properties in initial state*/
+  transition-property: background-color;
+  -webkit-transition-duration: 5s;
+  -moz-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  -ms-transition-duration: 5s;
+  /* Standard property last for future proof, meaning that
+	is going to be the last property which is going to be
+  processed by the browser following the rule of cascading stylesheet */
+  transition-duration: 5s;
+}
+
+#color .square:hover {
+  background-color: green;
+}
+
+/* Square to circle */
+#circle .square {
+  /***** UNMANTAINABLE ******/
+  /* -webkit-transition-property: border-radius, background-color;
+  -moz-transition-property: border-radius, background-color;
+  -o-transition-property: border-radius, background-color;
+  -ms-transition-property: border-radius, background-color;
+  transition-property: border-radius, background-color;
+  -webkit-transition-duration: 5s, 2s;
+  -moz-transition-duration: 5s, 2s;
+  -o-transition-duration: 5s, 2s;
+  -ms-transition-duration: 5s, 2s;
+  transition-duration: 5s, 2s;
+  transition-delay: 3s, 2s; */
+  /******  SHORTHAND ******/
+  -webkit-transition: border-radius 5s 3s, background-color 2s 2s;
+  -moz-transition: border-radius 5s 3s, background-color 2s 2s;
+  -o-transition: border-radius 5s 3s, background-color 2s 2s;
+  -ms-transition: border-radius 5s 3s, background-color 2s 2s;
+  /* ORDER:
+  1. PROPERTY
+  2. DURATION
+  3. DELAY
+  4. TIMING-FUNCTION (CONTROL SPEED OF THE ANIMATION) */
+  transition: border-radius 5s 3s, background-color 2s 2s;
+}
+
+#circle .square:hover {
+  border-radius: 50%;
+  background-color: purple;
+}
+
+
+/* 2. CSS Transition and 2D Transform */
