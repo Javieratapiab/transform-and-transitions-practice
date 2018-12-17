@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- HEAD -->
 
 <head>
   <meta charset="UTF-8">
@@ -8,41 +7,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<!-- BODY -->
-
 <body>
-  <h1>CSS Transition Fundamentals | Demos</h1>
-  <!-- Blue to green -->
-  <section id='color'>
-    <div class='square'></div>
-    <span class='description'>
-      <h1>Blue to green</h1>
-      Square shape changes its background color to green
-      on hover using <strong>transform-duration: 5s and transform-property:
-        background-color.</strong>
-    </span>
-  </section>
-  <!-- Square to circle -->
-  <section id='circle'>
-    <div class='square'></div>
-    <span class='description'>
-      <h1>Square to circle</h1>
-      Square shape changes its background color to purple
-      on hover using <strong>transition: border-radius 5s 3s,
-        background-color 2s 2s</strong> shorthand.
-      <h2>Order of transform shorthand</h2>
-      <ul>
-        <li>Property</li>
-        <li>Duration</li>
-        <li>Delay</li>
-        <li>Timing function(Control speed of animation)</li>
-      </ul>
-    </span>
-  </section>
+  <!-- 1. CSS TRANSITION FUNDAMENTALS -->
+  <div class='container'>
+    <div class='content'>
+      <h1 class='content__title'>CSS Transition Fundamentals | Demos</h1>
+      <!-- Summary -->
+      <div class='summary'>
+        <p><strong>Transition-property:</strong> Specifies name or names of CSS Properties which transitions will be applied. Only properties listed as a value of the transition property will be affected by the animation.</p>
+        <p><strong>Transition-duration(seconds):</strong> Specifies the duration of the animation. You can specify a single duration that will apply to all properties during the transition or multiple values to allow each property to transition over a different period of time.</p>
+        <p><strong>Transition-delay(seconds):</strong> Allows to delay the start of the animation. It also takes values in seconds just like transition-duration.</p>
+        <p><strong>Transition-timing-function:</strong> Includes five different options in order to control the speed of the curve.</p>
+        <div class='snippet'>
+          <h2>Browser Support and Vendor prefixes</h2>
+          <p>-webkit-  // chrome, safari</p>
+          <p>- moz - // mozilla</p>
+          <p>- o - // opera</p>
+          <p>- ms - // microsoft Internet explorer</p>
+          <p>standard property</p>
+        </div>
+        <h2 class='highlighted'>Useful tool: <a href='https://www.caniuse.com'>CANIUSE</a></h2>
+      </div>
+      <!-- Blue to green -->
+      <section id='color'>
+        <div class='square'></div>
+        <span class='description'>
+          <h1>Blue to green</h1>
+          Square shape changes its background color to green
+          on hover using <strong>transform-duration: 5s and transform-property: background-color.</strong>
+        </span>
+      </section>
+      <!-- Square to circle -->
+      <section id='circle'>
+        <div class='square'></div>
+        <span class='description'>
+          <h1>Square to circle</h1>
+          Square shape changes its background color to purple
+          on hover using <strong>transition: border-radius 5s 3s, background-color 2s 2s</strong> shorthand.
+          <h2>Order of transform shorthand</h2>
+          <ul>
+            <li>Property</li>
+            <li>Duration</li>
+            <li>Delay</li>
+            <li>Timing function(Control speed of animation)</li>
+          </ul>
+        </span>
+      </section>
+    </div>
+  </div>
   <!-- 2. CSS TRANSITION AND 2D TRANSFORM -->
-  <h1>CSS Transition and 2D Transform | Demos</h1>
+  <div class='container'>
+    <div class='content'>
+      <h1 class='content__title'>CSS Transition and 2D Transform | Demos</h1>
+    </div>
+  </div>
 </body>
 
 </html>
