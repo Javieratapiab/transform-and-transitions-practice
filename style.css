@@ -55,25 +55,6 @@ ul li {
   color: darkorange;
 }
 
-.examples {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.container__image {
-  margin: 0 1rem;
-}
-
-.container__image:first-child:hover {
-  transform: skewX(20deg);
-}
-
-.container__image:last-child:hover {
-  transform: skewX(-20deg);
-}
-
 /*  CSS Transition Fundamentals: Demo: Blue to Green */
 .square {
   width: 250px;
@@ -131,3 +112,50 @@ section {
 }
 
 /* 2. CSS Transition and 2D Transform */
+.examples {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.examples .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.container__image {
+  margin: 0 1.5rem;
+}
+
+.container__image.first:hover {
+  transform: skewX(20deg);
+}
+
+.container__image.second:hover {
+  transform: skewX(-20deg);
+}
+
+.orange__box-bigger,
+.orange__box-smaller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: orangered;
+  width: 120px;
+  height: 100px;
+  padding: .5rem;
+  color: white;
+}
+
+.orange__box-smaller:hover {
+  transform: scale(0.5, 0.5);
+}
+
+.orange__box-bigger:hover {
+  transform: scale(2, 2);
+}

@@ -87,24 +87,42 @@
         </p>
         <h2>Introduction to 2D Transform methods</h2>
         <ul>
-          <li><span class='bold__orange'>Skew():</span> skews element along <span class='bold__orange'>X</span> and
-            <span class='bold__orange'>Y</span>-axis
+          <li><span class='bold__orange'>Skew():</span> skews element along
+            <span class='bold__orange'>X</span> and <span class='bold__orange'>Y</span>-axis
             so this method takes two parameters. The first one is used to
-            target the X-axis, so in this example: <strong>Skew(20deg, 10deg)</strong> that allows to skews the
-            elements by 20 degrees on the X-axis, then the second parameter will allow to skew the same element by 10
-            degrees on the Y-axis.
-            <p>We can use the methods <span class='bold__orange'>skewX()</span> and <span class='bold__orange'>skewY()</span>
-              using positive and negative values.</p>
+            target the X-axis, so in this example: <strong>Skew(20deg, 10deg)</strong>
+            that allows to skews the elements by 20 degrees on the X-axis, then the second parameter
+            will allow to skew the same element by 10 degrees on the Y-axis.
+            <p>
+              We can use the methods <span class='bold__orange'>skewX()</span>
+              and<span class='bold__orange'>skewY()</span>using positive and negative values.
+            </p>
             <div class='examples'>
-              <div class='container__image'>
+              <div class='container__image first'>
                 <img src='https://placeimg.com/340/340/tech' alt='tech-image'>
               </div>
-              <div class='container__image'>
+              <div class='container__image second'>
                 <img src='https://placeimg.com/340/340/animals' alt='animal-image'>
               </div>
             </div>
           </li>
-          <li><span class='bold__orange'>Scale():</span></li>
+          <li><span class='bold__orange'>Scale():</span> Increases or decreases the size
+            of an element, so this method also takes two parameters. The first argument
+            will target the <span class='bold__orange'>width</span> and the second one the
+            <span class='bold__orange'>height</span>
+            <div class='examples'>
+              <div class='container'>
+                <h2>Twice smaller - scale(0.5, 0.5)</h2>
+                <div class='orange__box-smaller'></div>
+              </div>
+              <div class='container'>
+                <h2>Twice bigger - scale (2.2)</h2>
+                <div class='orange__box-bigger'>
+                  <span>Hover on me!</span>
+                </div>
+              </div>
+            </div>
+          </li>
           <li>Rotate()</li>
           <li>Translate()</li>
         </ul>
