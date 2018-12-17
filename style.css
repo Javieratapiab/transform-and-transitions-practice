@@ -129,6 +129,11 @@ section {
 
 .container__image {
   margin: 0 1.5rem;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  transition: all .2s ease-in;
 }
 
 .container__image.first:hover {
@@ -150,6 +155,11 @@ section {
   height: 100px;
   padding: .5rem;
   color: white;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .orange__box-smaller:hover {
