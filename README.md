@@ -4,7 +4,7 @@ from Pluralsight's course [CSS Animation with Transition and Transform](https://
 
 ## Topics
 
-⋅⋅* CSS Transition Fundamentals.
-⋅⋅* CSS Transition and 2D Transform. 
-⋅⋅* Transforming and Animating in 3D.
-⋅⋅* Final project (to be continued...)
+1. CSS Transition Fundamentals.
+2. CSS Transition and 2D Transform. 
+3. Transforming and Animating in 3D.
+4. Final project (to be continued...)
