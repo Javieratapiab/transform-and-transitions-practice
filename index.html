@@ -17,19 +17,28 @@
       <h1 class='content__title'>CSS Transition Fundamentals | Demos</h1>
       <!-- Summary -->
       <div class='summary'>
-        <p><strong>Transition-property:</strong> Specifies name or names of CSS Properties which transitions will be applied. Only properties listed as a value of the transition property will be affected by the animation.</p>
-        <p><strong>Transition-duration(seconds):</strong> Specifies the duration of the animation. You can specify a single duration that will apply to all properties during the transition or multiple values to allow each property to transition over a different period of time.</p>
-        <p><strong>Transition-delay(seconds):</strong> Allows to delay the start of the animation. It also takes values in seconds just like transition-duration.</p>
-        <p><strong>Transition-timing-function:</strong> Includes five different options in order to control the speed of the curve.</p>
+        <p><span class='bold__orange'>Transition-property:</span> Specifies name or names of CSS Properties which
+          transitions will be
+          applied. Only properties listed as a value of the transition property will be affected by the animation.</p>
+        <p><span class='bold__orange'>Transition-duration(seconds):</span> Specifies the duration of the animation. You
+          can specify a
+          single duration that will apply to all properties during the transition or multiple values to allow each
+          property to transition over a different period of time.</p>
+        <p><span class='bold__orange'>Transition-delay(seconds):</span> Allows to delay the start of the animation. It
+          also takes values
+          in seconds just like transition-duration.</p>
+        <p><span class='bold__orange'>Transition-timing-function:</span> Includes five different options in order to
+          control the speed
+          of the curve.</p>
         <div class='snippet'>
           <h2>Browser Support and Vendor prefixes</h2>
-          <p>-webkit-  // chrome, safari</p>
+          <p>-webkit- // chrome, safari</p>
           <p>- moz - // mozilla</p>
           <p>- o - // opera</p>
           <p>- ms - // microsoft Internet explorer</p>
           <p>standard property</p>
         </div>
-        <h2 class='highlighted'>Useful tool: <a href='https://www.caniuse.com'>CANIUSE</a></h2>
+        <h2 class='highlighted'>Useful tool: <a href='https://www.caniuse.com' class='bold__orange'>CANIUSE</a> 🔍</h2>
       </div>
       <!-- Blue to green -->
       <section id='color'>
@@ -37,7 +46,7 @@
         <span class='description'>
           <h1>Blue to green</h1>
           Square shape changes its background color to green
-          on hover using <strong>transform-duration: 5s and transform-property: background-color.</strong>
+          on hover using <span class='bold__orange'>transform-duration: 5s and transform-property: background-color.</span>
         </span>
       </section>
       <!-- Square to circle -->
@@ -46,7 +55,8 @@
         <span class='description'>
           <h1>Square to circle</h1>
           Square shape changes its background color to purple
-          on hover using <strong>transition: border-radius 5s 3s, background-color 2s 2s</strong> shorthand.
+          on hover using <span class='bold__orange'>transition: border-radius 5s 3s, background-color 2s 2s</span>
+          shorthand.
           <h2>Order of transform shorthand</h2>
           <ul>
             <li>Property</li>
@@ -62,6 +72,43 @@
   <div class='container'>
     <div class='content'>
       <h1 class='content__title'>CSS Transition and 2D Transform | Demos</h1>
+      <!-- Summary -->
+      <div class='summary center'>
+        <p>Definition: CSS Transform allows elements styled in CSS to be
+          transformed in <span class='bold__orange'>two-dimensional.</span>
+        </p>
+      </div>
+      <div class='summary'>
+        <p><span class='bold__orange'>Transition-property:</span> You can change
+          the <span class='bold__orange'>shape</span> of elements, you can
+          <span class='bold__orange'>resize</span> them by scaling it up and down,
+          and you can also change the <span class='bold__orange'>position</span>
+          of elements by making them move around the screen.
+        </p>
+        <h2>Introduction to 2D Transform methods</h2>
+        <ul>
+          <li><span class='bold__orange'>Skew():</span> skews element along <span class='bold__orange'>X</span> and
+            <span class='bold__orange'>Y</span>-axis
+            so this method takes two parameters. The first one is used to
+            target the X-axis, so in this example: <strong>Skew(20deg, 10deg)</strong> that allows to skews the
+            elements by 20 degrees on the X-axis, then the second parameter will allow to skew the same element by 10
+            degrees on the Y-axis.
+            <p>We can use the methods <span class='bold__orange'>skewX()</span> and <span class='bold__orange'>skewY()</span>
+              using positive and negative values.</p>
+            <div class='examples'>
+              <div class='container__image'>
+                <img src='https://placeimg.com/340/340/tech' alt='tech-image'>
+              </div>
+              <div class='container__image'>
+                <img src='https://placeimg.com/340/340/animals' alt='animal-image'>
+              </div>
+            </div>
+          </li>
+          <li><span class='bold__orange'>Scale():</span></li>
+          <li>Rotate()</li>
+          <li>Translate()</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

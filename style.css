@@ -1,7 +1,24 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
+  padding: 0;
   margin: 0;
-  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2;
   font-family: 'Open Sans', sans-serif;
+}
+
+ul li {
+  margin: 1rem 0;
 }
 
 .content__title {
@@ -17,15 +34,44 @@ body {
   margin: 1rem;
 }
 
+.center {
+  text-align: -webkit-center;
+}
+
 .snippet {
   text-align: center;
-  background: lightgrey;
-  width: 300px;
+  background: rgb(255, 245, 175);
+  width: 500px;
   align-self: center;
+  border-radius: 1rem;
 }
 
 .highlighted {
   font-size: 1.5rem;
+}
+
+.bold__orange {
+  font-weight: bold;
+  color: darkorange;
+}
+
+.examples {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container__image {
+  margin: 0 1rem;
+}
+
+.container__image:first-child:hover {
+  transform: skewX(20deg);
+}
+
+.container__image:last-child:hover {
+  transform: skewX(-20deg);
 }
 
 /*  CSS Transition Fundamentals: Demo: Blue to Green */
